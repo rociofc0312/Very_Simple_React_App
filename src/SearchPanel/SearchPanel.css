@@ -1,0 +1,52 @@
+.form-container{
+    display: flex;
+    margin: 1rem 4rem 0 4rem;
+    box-sizing: border-box;
+}
+
+.district-form{
+    float: left;
+    width: 50%;
+}
+
+.type-form{
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.search{
+    box-sizing: border-box;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: BlinkMacSystemFont;
+    outline: none;
+    border: 2px solid #F2B134;
+    border-radius: 0.5rem;
+    transition: all .5s ease-in-out;
+}
+
+.search:hover{
+    border-color: #4FB99F;
+}
+
+.search:focus{
+    border-color: #4FB99F;
+}
+
+@media only screen and (max-width: 450px){
+    .form-container{
+        display: block;
+    }
+    .district-form, .type-form{
+        float: unset;
+        width: unset;
+        text-align: unset;
+    }
+    .district-form{
+        margin-bottom: 1rem;
+    }
+    .district-form>input, .type-form>input{
+        width: 100%;
+    }
+}
