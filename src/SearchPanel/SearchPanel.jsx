@@ -26,7 +26,12 @@ class SearchPanel extends Component {
                     <input type="text" placeholder="Filter by district..." className="search" value={filterDistrict} onChange={this.handleFilterDistrictChange} />
                 </form>
                 <form className="type-form">
-                    <input type="text" placeholder="Filter by type..." className="search" value={filterType} onChange={this.handleFilterTypeChange} />
+                <label htmlFor="">Filter by: </label>
+                    <select type="text" className="search" value={filterType} onChange={this.handleFilterTypeChange}>
+                        <option value="All">All</option>
+                        <option value="Alquiler">Alquiler</option>
+                        <option value="Venta">Venta</option>
+                    </select>
                 </form>
             </div>
         )

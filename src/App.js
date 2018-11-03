@@ -9,7 +9,7 @@ class App extends Component {
     super(props);
     this.state = {
       filterDistrict: '',
-      filterType: ''
+      filterType: 'All'
     }
 
     this.handleFilterDistrictChange = this.handleFilterDistrictChange.bind(this);
@@ -28,12 +28,13 @@ class App extends Component {
   }
 
   render() {
+    var {filterType, filterDistrict} = this.state;
     return (
       <div className="App">
         <div>
           <SearchPanel
-            filterType={this.state.filterType}
-            filterDistrict={this.state.filterDistrict}
+            filterType={filterType}
+            filterDistrict={filterDistrict}
             onHandleFilterDistrictChange={this.handleFilterDistrictChange}
             onHandleFilterTypeChange={this.handleFilterTypeChange} />
           <PropertyItems

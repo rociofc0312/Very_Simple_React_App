@@ -8,13 +8,19 @@
     float: left;
     width: 50%;
 }
+.district-form>input{
+    width: 50%;
+}
 
 .type-form{
     float: right;
     width: 50%;
     text-align: right;
 }
-
+.type-form>select{
+    height: 100%;
+    width: 50%;
+}
 .search{
     box-sizing: border-box;
     padding: 0.5rem;
@@ -37,6 +43,7 @@
 @media only screen and (max-width: 450px){
     .form-container{
         display: block;
+        margin: 1rem;
     }
     .district-form, .type-form{
         float: unset;
@@ -46,7 +53,7 @@
     .district-form{
         margin-bottom: 1rem;
     }
-    .district-form>input, .type-form>input{
+    .district-form>input, .type-form>select{
         width: 100%;
     }
 }
